@@ -1,1 +1,22 @@
 // Mixins in here
+
+.custum-button(){
+    display:flex;
+    text-align: @align;
+   }
+
+
+.btn {
+    .custum-button(center);
+        width: 85%;
+        background-color:rgb(7, 57, 66);
+        color: white;
+        border-radius: 10px;
+        padding: 10px 0 10px 0;
+        font-size: 2rem;
+
+    @media @mobile {
+        width: 100%;
+        }       
+}  
+
